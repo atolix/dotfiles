@@ -13,6 +13,9 @@
         "javascript",
         "javascriptreact"
     ],
+    "solargraph.formatting": true,
+    "solargraph.autoformat": true,
+    "solargraph.diagnostics": true,
     "tsserver.formatOnType": true,
 		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
 		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
@@ -24,5 +27,5 @@
         "javascriptreact",
         "typescript",
         "typescriptreact"
-    ],
+    ]
 }
