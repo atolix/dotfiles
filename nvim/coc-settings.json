@@ -21,6 +21,8 @@
 		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
 		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
 		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+    "typescript.format.semicolons": "remove",
+    "typescript.preferences.quoteStyle": "single",
     "eslint.autoFixOnSave": true,
     "eslint.filetypes": [
         "javascript",
