@@ -72,13 +72,16 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
 -- nvim-colorizer init --
 require'colorizer'.setup()
+
 -- indent_blankline init --
 require("indent_blankline").setup {
   show_current_context = true,
   show_current_context_start = true,
 }
+
 require("nvim-autopairs").setup()
 require("fidget").setup()
 require("bufferline").setup()

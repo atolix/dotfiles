@@ -8,9 +8,14 @@ require'packer'.startup(function()
   use { 'windwp/nvim-autopairs' }
   use 'j-hui/fidget.nvim'
   use 'tpope/vim-fugitive'
-  use 'airblade/vim-gitgutter'
   use 'obaland/vfiler.vim'
   use 'obaland/vfiler-fzf'
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+  end
+  }
   use 'ibhagwan/fzf-lua'
   use 'lambdalisue/fern.vim'
   use 'lambdalisue/fern-git-status.vim'
