@@ -84,8 +84,8 @@ vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>")
 vim.keymap.set('n', '<C-p>', "<cmd>bnext<CR>")
 -- window color setup --
 vim.cmd [[
-highlight FzfLuaNormal guibg=#131317
-highlight FzfLuaBorder guibg=#131317
+highlight FzfLuaNormal guibg=none
+highlight FzfLuaBorder guibg=none
 ]]
 vim.opt.winblend = 5
 vim.opt.termguicolors = true
