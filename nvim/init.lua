@@ -89,7 +89,7 @@ vim.cmd [[
 highlight FzfLuaNormal ctermbg=none guibg=none
 highlight FzfLuaBorder ctermbg=none guibg=none
 ]]
-vim.opt.winblend = 5
+vim.opt.winblend = 20
 vim.opt.termguicolors = true
 -- fzf-lua setting --
 vim.g.mapleader = " "
