@@ -21,7 +21,9 @@ require'fzf-lua'.setup({
 })
 
 -- colorscheme init --
-require('github-theme').setup()
+require('github-theme').setup({
+  transparent = true
+})
 vim.cmd 'autocmd ColorScheme * highlight Normal ctermbg=none guibg=none'
 vim.cmd 'autocmd ColorScheme * highlight NonText ctermbg=none guibg=none'
 vim.cmd 'autocmd ColorScheme * highlight LineNr ctermbg=none guibg=none'
