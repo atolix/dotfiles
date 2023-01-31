@@ -87,16 +87,20 @@ require("scrollbar").setup()
 
 require("nvim-autopairs").setup()
 require("fidget").setup()
+-- bufferline init --
 require("bufferline").setup()
 vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>")
 vim.keymap.set('n', '<C-p>', "<cmd>bnext<CR>")
--- window color setup --
+
+-- fzf window color setup --
 vim.cmd [[
 highlight FzfLuaNormal ctermbg=none guibg=none
 highlight FzfLuaBorder ctermbg=none guibg=none
 ]]
+
 vim.opt.winblend = 20
 vim.opt.termguicolors = true
+
 -- fzf-lua setting --
 vim.g.mapleader = " "
 vim.keymap.set('n', '<C-f>', "<cmd>FzfLua files<CR>")
