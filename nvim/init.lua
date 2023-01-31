@@ -82,6 +82,9 @@ require("indent_blankline").setup {
   show_current_context_start = true,
 }
 
+-- scrollbar init --
+require("scrollbar").setup()
+
 require("nvim-autopairs").setup()
 require("fidget").setup()
 require("bufferline").setup()
