@@ -88,6 +88,18 @@ require("indent_blankline").setup {
   show_current_context_start = true,
 }
 
+require('nvim-treesitter.configs').setup {
+  endwise = {
+    enable = true,
+  },
+  ensure_installed = {
+    'ruby',
+    'go',
+    'rust',
+    'typescript'
+  }
+}
+
 -- scrollbar init --
 require("scrollbar").setup()
 
