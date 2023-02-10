@@ -1,9 +1,43 @@
 local wezterm = require 'wezterm';
+local act = wezterm.action;
 
 return {
   font = wezterm.font 'JetBrains Mono',
   font_size = 12,
-  -- color_scheme = 'Sequoia Monochrome',
+  use_ime = true,
   color_scheme = 'Sequoia Moonlight',
-  window_background_opacity = 0.95
+  window_background_opacity = 0.95,
+  leader = { key = '1', mods = 'CTRL', timeout_milliseconds = 2000 },
+  keys = {
+    {
+      key = '|',
+      mods = 'LEADER',
+      action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
+    },
+    {
+      key = '%',
+      mods = 'LEADER',
+      action = act.SplitVertical { domain = 'CurrentPaneDomain' },
+    },
+    {
+      key = 'LeftArrow',
+      mods = 'LEADER',
+      action = act.ActivatePaneDirection 'Left',
+    },
+    {
+      key = 'RightArrow',
+      mods = 'LEADER',
+      action = act.ActivatePaneDirection 'Right',
+    },
+    {
+      key = 'UpArrow',
+      mods = 'LEADER',
+      action = act.ActivatePaneDirection 'Up',
+    },
+    {
+      key = 'DownArrow',
+      mods = 'LEADER',
+      action = act.ActivatePaneDirection 'Down',
+    },
+  },
 }
