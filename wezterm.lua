@@ -2,8 +2,8 @@ local wezterm = require 'wezterm';
 local act = wezterm.action;
 
 return {
-  font = wezterm.font 'JetBrains Mono',
-  font_size = 12,
+  font = wezterm.font 'Ricty',
+  font_size = 13,
   use_ime = true,
   color_scheme = 'Sequoia Moonlight',
   window_background_opacity = 0.95,
