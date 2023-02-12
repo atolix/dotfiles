@@ -98,7 +98,8 @@ require('nvim-treesitter.configs').setup {
     'ruby',
     'go',
     'rust',
-    'typescript'
+    'typescript',
+    'elixir'
   }
 }
 
