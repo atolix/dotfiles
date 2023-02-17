@@ -6,6 +6,7 @@ return {
   font_size = 14,
   use_ime = true,
   color_scheme = 'Sequoia Moonlight',
+  adjust_window_size_when_changing_font_size = false,
   window_background_opacity = 0.95,
   leader = { key = '1', mods = 'CTRL', timeout_milliseconds = 2000 },
   keys = {
