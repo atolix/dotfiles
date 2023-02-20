@@ -22,7 +22,9 @@ require'fzf-lua'.setup({
 
 -- colorscheme init --
 require('github-theme').setup({
-  transparent = true
+  transparent = true,
+  comment_style	= 'NONE',
+  function_style = 'NONE'
 })
 -- vim.cmd[[colorscheme sequoia]]
 vim.opt.termguicolors = true
