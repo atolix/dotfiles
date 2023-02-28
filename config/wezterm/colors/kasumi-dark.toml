@@ -1,0 +1,16 @@
+[colors]
+foreground = "#E2E4ED"
+background = "#0F1014"
+cursor_bg = "#9BA4BF"
+cursor_fg = "#626983"
+cursor_border = "#9BA4BF"
+selection_fg = "#626983"
+selection_bg = "#22222a"
+
+ansi = ["#0F1014", "#6B8199", "#869BB5", "#A3B5C9", "#BFCEDE", "#F2F2F2", "#84A5DB", "#626983"]
+brights = ["#575861", "#6B8199", "#869BB5", "#A3B5C9", "#BFCEDE", "#F2F2F2", "#84A5DB", "#626983"]
+
+[metadata]
+name = "Kasumi Dark"
+author = "atolix"
+origin_url = "https://github.com/atolix/wezterm-kasumi-theme"
