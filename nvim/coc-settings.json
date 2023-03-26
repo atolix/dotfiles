@@ -27,5 +27,12 @@
         "javascriptreact",
         "typescript",
         "typescriptreact"
-    ]
+    ],
+    "languageserver": {
+      "clangd": {
+        "command": "clangd",
+        "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+        "filetypes": ["c", "cpp", "objc", "objcpp"]
+      }
+    }
 }

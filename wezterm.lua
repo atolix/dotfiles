@@ -8,7 +8,7 @@ return {
   color_scheme = 'Kasumi Dark',
   adjust_window_size_when_changing_font_size = false,
   default_cursor_style = 'SteadyUnderline',
-  window_background_opacity = 0.98,
+  window_background_opacity = 0.99,
   leader = { key = '1', mods = 'CTRL', timeout_milliseconds = 2000 },
   keys = {
     {
