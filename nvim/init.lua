@@ -25,8 +25,9 @@ require'fzf-lua'.setup({
 -- colorscheme init --
 require('github-theme').setup({
   transparent = true,
-  comment_style	= 'NONE',
-  function_style = 'NONE'
+  comment_style = 'NONE',
+  function_style = 'NONE',
+  keyword_style = 'NONE',
 })
 
 vim.opt.termguicolors = true

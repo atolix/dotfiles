@@ -8,26 +8,12 @@
     "coc.preferences.hoverTarget": "float",
     "coc.preferences.formatOnType": true,
     "coc.preferences.formatOnSaveFiletypes": [
-        "typescript",
-        "typescriptreact",
-        "javascript",
-        "javascriptreact"
+      "go"
     ],
     "solargraph.formatting": true,
     "solargraph.autoformat": true,
     "solargraph.diagnostics": true,
     "tsserver.formatOnType": true,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-    "eslint.autoFixOnSave": true,
-    "eslint.filetypes": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
     "languageserver": {
       "clangd": {
         "command": "clangd",
