@@ -21,6 +21,30 @@ require'fzf-lua'.setup({
   },
 })
 
+require('nvim-treesitter.configs').setup {
+  sync_install = true,
+  auto_install = true,
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+  endwise = {
+    enable = true,
+  },
+  ensure_installed = {
+    'ruby',
+    'elixir',
+    'lua',
+    'vim',
+    'go',
+    'rust',
+    'typescript'
+  },
+  indent = {
+    enable = true
+  }
+}
+
 
 -- colorscheme init --
 require('github-theme').setup({
@@ -93,22 +117,6 @@ require'colorizer'.setup()
 require("indent_blankline").setup {
   show_current_context = true,
   show_current_context_start = true,
-}
-
-require('nvim-treesitter.configs').setup {
-  endwise = {
-    enable = true,
-  },
-  autotag = {
-    enable = true
-  },
-  ensure_installed = {
-    'ruby',
-    'go',
-    'rust',
-    'typescript',
-    'elixir'
-  }
 }
 
 -- scrollbar init --
