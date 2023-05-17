@@ -35,5 +35,6 @@ require'packer'.startup(function()
   use { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' }
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
+  use 'rust-lang/rust.vim'
   use {'neoclide/coc.nvim', branch = 'release'}
 end)
