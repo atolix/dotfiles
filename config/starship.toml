@@ -25,5 +25,8 @@ format = "| node [$version ]($style)"
 [golang]
 format = "| golang [$version ]($style)"
 
+[rust]
+format = "| rust [$version ]($style)"
+
 [lua]
 format = "| lua [$version ]($style)"
