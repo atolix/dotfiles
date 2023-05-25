@@ -13,10 +13,10 @@ vim.opt.expandtab = true
 -- fzf-lua init --
 require'fzf-lua'.setup({
   winopts = {
-    height     = 0.85,     -- window height
-    width      = 0.80,     -- window width
-    row        = 0.35,     -- window row position (0=top, 1=bottom)
-    col        = 0.50,     -- window col position (0=left, 1=right)
+    height     = 0.85,
+    width      = 0.80,
+    row        = 0.35,
+    col        = 0.50,
     border     = 'rounded'
   },
 })
