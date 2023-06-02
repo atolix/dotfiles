@@ -1,5 +1,5 @@
 require'plugins'
-vim.opt.fileencoding = "utf-8"                  -- the encoding written to a file
+vim.opt.fileencoding = "utf-8"
 vim.opt.cursorline = true                       -- highlight the current line
 vim.opt.number = true                           -- set numbered lines
 vim.opt.winblend = 20
