@@ -1,7 +1,7 @@
 require'plugins'
 vim.opt.fileencoding = "utf-8"
-vim.opt.cursorline = true                       -- highlight the current line
-vim.opt.number = true                           -- set numbered lines
+vim.opt.cursorline = true
+vim.opt.number = true
 vim.opt.winblend = 20
 vim.opt.pumblend = 20
 vim.opt.clipboard:append{'unnamedplus'}
