@@ -25,6 +25,7 @@ require'packer'.startup(function()
     end
   }
   use 'ibhagwan/fzf-lua'
+  use 'tpope/vim-rails'
   use 'lambdalisue/fern.vim'
   use 'lambdalisue/fern-git-status.vim'
   use 'norcalli/nvim-colorizer.lua'
