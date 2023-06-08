@@ -124,6 +124,7 @@ require("scrollbar").setup()
 
 require("nvim-autopairs").setup()
 require("fidget").setup()
+
 -- bufferline init --
 require("bufferline").setup()
 vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>")
