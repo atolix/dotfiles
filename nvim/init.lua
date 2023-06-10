@@ -53,7 +53,6 @@ require('github-theme').setup({
   function_style = 'NONE',
   keyword_style = 'NONE',
 })
-
 vim.opt.termguicolors = true
 vim.cmd 'autocmd ColorScheme * highlight Normal ctermbg=none guibg=none'
 vim.cmd 'autocmd ColorScheme * highlight NonText ctermbg=none guibg=none'
