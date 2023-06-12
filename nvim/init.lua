@@ -134,7 +134,6 @@ vim.cmd [[
 highlight FzfLuaNormal ctermbg=none guibg=none
 highlight FzfLuaBorder ctermbg=none guibg=none
 ]]
-
 vim.opt.winblend = 20
 
 -- fzf-lua setting --
