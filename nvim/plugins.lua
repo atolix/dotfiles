@@ -37,5 +37,6 @@ require'packer'.startup(function()
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
   use 'rust-lang/rust.vim'
+  use 'github/copilot.vim'
   use {'neoclide/coc.nvim', branch = 'release'}
 end)
