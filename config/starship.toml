@@ -31,5 +31,8 @@ format = "| rust [$version ]($style)"
 [lua]
 format = "| lua [$version ]($style)"
 
+[elixir]
+format = "| elixir [$version ]($style)"
+
 [docker_context]
 format = "on [$context]($style) "
