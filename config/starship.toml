@@ -30,3 +30,6 @@ format = "| rust [$version ]($style)"
 
 [lua]
 format = "| lua [$version ]($style)"
+
+[docker_context]
+format = "on [$context]($style) "
