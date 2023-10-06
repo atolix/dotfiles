@@ -45,7 +45,6 @@ require('nvim-treesitter.configs').setup {
   }
 }
 
-
 -- colorscheme init --
 require('github-theme').setup({
   transparent = true,
@@ -113,10 +112,7 @@ require('lualine').setup {
 require'colorizer'.setup()
 
 -- indent_blankline init --
-require("indent_blankline").setup {
-  show_current_context = true,
-  show_current_context_start = true,
-}
+require("ibl").setup { indent = { highlight = highlight } }
 
 -- scrollbar init --
 require("scrollbar").setup()
