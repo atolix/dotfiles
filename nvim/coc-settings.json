@@ -14,7 +14,7 @@
     "solargraph.formatting": true,
     "solargraph.autoformat": true,
     "solargraph.diagnostics": true,
-    "solargraph.commandPath": "/Users/ryutaro.mitoda/.rbenv/shims/solargraph",
+    "solargraph.commandPath": "/Users/grinch1252/.rbenv/shims/solargraph",
     "tsserver.formatOnType": true,
     "languageserver": {
       "clangd": {
