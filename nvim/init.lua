@@ -24,12 +24,12 @@ require'fzf-lua'.setup({
 require('nvim-treesitter.configs').setup {
   sync_install = true,
   auto_install = true,
+  endwise = {
+    enable = true,
+  },
   highlight = {
     enable = true,
     additional_vim_regex_highlighting = false,
-  },
-  endwise = {
-    enable = true,
   },
   ensure_installed = {
     'ruby',
@@ -155,3 +155,6 @@ vim.keymap.set(
     end,
     { expr = true }
 )
+
+-- vim.opt.runtimepath = '~/dps-helloworld'
+-- vim.cmd 'let g:denops#debug = 1'
