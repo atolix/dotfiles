@@ -38,4 +38,5 @@ require'packer'.startup(function()
   use { 'junegunn/fzf.vim' }
   use 'rust-lang/rust.vim'
   use {'neoclide/coc.nvim', branch = 'release'}
+  use 'vim-denops/denops.vim'
 end)
