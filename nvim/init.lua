@@ -156,5 +156,3 @@ vim.keymap.set(
     { expr = true }
 )
 
--- vim.opt.runtimepath = '~/dps-helloworld'
--- vim.cmd 'let g:denops#debug = 1'
