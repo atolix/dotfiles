@@ -3,7 +3,7 @@ local act = wezterm.action;
 
 return {
   font = wezterm.font 'Ricty Diminished',
-  font_size = 14,
+  font_size = 13,
   use_ime = true,
   color_scheme = 'Kasumi Dark',
   adjust_window_size_when_changing_font_size = false,
