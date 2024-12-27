@@ -26,5 +26,9 @@ mkdir nvim
 ln -sf ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
 
-cd nvim && mkdir lua
+mkdir ./nvim/lua
 ln -sf ~/dotfiles/nvim/plugins.lua ~/.config/nvim/lua/plugins.lua
+
+ln -sf ~/dotfiles/zshrc ~/.zshrc
+
+source .zshrc
