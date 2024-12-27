@@ -5,7 +5,7 @@ return {
   font = wezterm.font 'Ricty Diminished',
   font_size = 13,
   use_ime = true,
-  color_scheme = 'Kasumi Dark',
+  color_scheme = 'Sequoia Monochrome',
   adjust_window_size_when_changing_font_size = false,
   default_cursor_style = 'SteadyUnderline',
   window_background_opacity = 0.85,
