@@ -19,6 +19,9 @@ ln -sf ~/dotfiles/config/starship.toml ~/.config/starship.toml
 mkdir wezterm
 ln -sf ~/dotfiles/wezterm.lua ~/.config/wezterm/wezterm.lua
 
+mkdir ./wezterm/colors
+ln -sf ~/dotfiles/wezterm/colors/kasumi-dark.toml ~/.config/wezterm/colors/kasumi-dark.toml
+
 mkdir nvim
 ln -sf ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
