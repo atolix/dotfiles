@@ -12,4 +12,16 @@ mkdir .zsh
 curl -o ./.zsh/git-completion.zsh  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 curl -o ./.zsh/git-prompt.sh  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 
+# Create Sym Links
+mkdir .config && cd .config
+ln -sf ~/dotfiles/config/starship.toml ~/.config/starship.toml
 
+mkdir wezterm
+ln -sf ~/dotfiles/wezterm.lua ~/.config/wezterm/wezterm.lua
+
+mkdir nvim
+ln -sf ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
+ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
+
+cd nvim && mkdir lua
+ln -sf ~/dotfiles/nvim/plugins.lua ~/.config/nvim/lua/plugins.lua
