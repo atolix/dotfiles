@@ -23,9 +23,7 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export BAT_THEME='Nord'
 export SPACESHIP_PROMPT_DEFAULT_PREFIX=false
 export PATH="/usr/local/opt/llvm/bin:$PATH"
-export BOOKMARK_PATH="/Users/grinch1252/Library/Application Support/Google/Chrome/Default/Bookmarks"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
-source /Users/grinch1252/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
