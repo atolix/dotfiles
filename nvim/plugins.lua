@@ -7,8 +7,6 @@ require'packer'.startup(function()
   use { 'windwp/nvim-autopairs' }
   use 'j-hui/fidget.nvim'
   use 'tpope/vim-fugitive'
-  use 'obaland/vfiler.vim'
-  use 'obaland/vfiler-fzf'
   use {
     'lewis6991/gitsigns.nvim',
     config = function()
@@ -36,7 +34,5 @@ require'packer'.startup(function()
   use { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' }
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
-  use 'rust-lang/rust.vim'
   use {'neoclide/coc.nvim', branch = 'release'}
-  use 'vim-denops/denops.vim'
 end)
