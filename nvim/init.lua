@@ -59,11 +59,6 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'auto',
-    disabled_filetypes = {
-      statusline = {},
-      winbar = {},
-    },
-    ignore_focus = {},
     always_divide_middle = true,
     globalstatus = false,
     refresh = {
@@ -82,7 +77,6 @@ require('lualine').setup {
         path = 1
       }
     },
-    lualine_d = {'buffers'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
