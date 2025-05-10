@@ -39,7 +39,7 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- gitsign --
-vim.api.nvim_create_user_command('Gb', function()
+vim.api.nvim_create_user_command('Gb', function() -- Show full commit message
   require('gitsigns').blame_line{full=true}
 end, {})
 
