@@ -5,7 +5,6 @@ require'packer'.startup(function()
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use { 'windwp/nvim-autopairs' }
-  use 'j-hui/fidget.nvim'
   use 'tpope/vim-fugitive'
   use {
     'lewis6991/gitsigns.nvim',
@@ -32,7 +31,5 @@ require'packer'.startup(function()
   use { 'petertriho/nvim-scrollbar' }
   use {'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons'}
   use { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' }
-  use { 'junegunn/fzf', run = ":call fzf#install()" }
-  use { 'junegunn/fzf.vim' }
   use {'neoclide/coc.nvim', branch = 'release'}
 end)
