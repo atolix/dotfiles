@@ -7,12 +7,7 @@
     "suggest.enablePreview": true,
     "coc.preferences.hoverTarget": "float",
     "coc.preferences.formatOnType": true,
-    "coc.preferences.formatOnSaveFiletypes": [
-      "go",
-      "rust"
-    ],
-    "solargraph.formatting": true,
-    "solargraph.autoformat": true,
+    "coc.preferences.formatOnSaveFiletypes": ["go"],
     "solargraph.diagnostics": true,
     "solargraph.commandPath": "/Users/grinch1252/.rbenv/shims/solargraph",
     "tsserver.formatOnType": true
