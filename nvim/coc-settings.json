@@ -15,12 +15,5 @@
     "solargraph.autoformat": true,
     "solargraph.diagnostics": true,
     "solargraph.commandPath": "/Users/grinch1252/.rbenv/shims/solargraph",
-    "tsserver.formatOnType": true,
-    "languageserver": {
-      "clangd": {
-        "command": "clangd",
-        "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-        "filetypes": ["c", "cpp", "objc", "objcpp"]
-      }
-    }
+    "tsserver.formatOnType": true
 }
