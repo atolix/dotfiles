@@ -81,6 +81,7 @@ require('lualine').setup {
     lualine_z = {'location'}
   },
   inactive_sections = {
+    lualine_a = {},
     lualine_b = {},
     lualine_c = {
       { 'filename', file_status = true, path = 1 }
@@ -103,8 +104,8 @@ require("nvim-autopairs").setup()
 
 -- bufferline --
 require("bufferline").setup()
-vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>") -- `ctrl + o` -> Move tp before buffer
-vim.keymap.set('n', '<C-p>', "<cmd>bnext<CR>") -- `ctrl + p` -> Move to after buffer 
+vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>") -- `ctrl + o` -> Move to previous buffer
+vim.keymap.set('n', '<C-p>', "<cmd>bnext<CR>") -- `ctrl + p` -> Move to next buffer
 
 -- fzf-lua --
 require'fzf-lua'.setup({
