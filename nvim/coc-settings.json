@@ -9,6 +9,6 @@
     "coc.preferences.formatOnType": true,
     "coc.preferences.formatOnSaveFiletypes": ["go"],
     "solargraph.diagnostics": true,
-    "solargraph.commandPath": "/Users/grinch1252/.rbenv/shims/solargraph",
+    "solargraph.commandPath": "solargraph",
     "tsserver.formatOnType": true
 }
