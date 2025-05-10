@@ -9,17 +9,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
--- fzf-lua init --
-require'fzf-lua'.setup({
-  winopts = {
-    height     = 0.85,
-    width      = 0.80,
-    row        = 0.35,
-    col        = 0.50,
-    border     = 'rounded'
-  },
-})
-
+-- nvim-treesitter --
 require('nvim-treesitter.configs').setup {
   sync_install = true,
   auto_install = true,
@@ -44,12 +34,12 @@ require('nvim-treesitter.configs').setup {
   }
 }
 
--- gitsign init --
+-- gitsign --
 vim.api.nvim_create_user_command('Gb', function()
   require('gitsigns').blame_line{full=true}
 end, {})
 
--- colorscheme init --
+-- colorscheme --
 require('github-theme').setup({
   transparent = true,
   comment_style = 'NONE',
@@ -65,7 +55,7 @@ vim.cmd [[
   autocmd ColorScheme * highlight EndOfBuffer ctermbg=none guibg=none
 ]]
 
--- lualine init --
+-- lualine --
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -114,34 +104,46 @@ require('lualine').setup {
   extensions = {}
 }
 
--- nvim-colorizer init --
+-- nvim-colorizer --
 require'colorizer'.setup()
 
--- scrollbar init --
+-- scrollbar --
 require("scrollbar").setup()
 
+-- nvim-autopairs --
 require("nvim-autopairs").setup()
 
--- bufferline init --
+-- bufferline --
 require("bufferline").setup()
 vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>")
 vim.keymap.set('n', '<C-p>', "<cmd>bnext<CR>")
 
--- fzf window color setup --
+-- fzf-lua --
+require'fzf-lua'.setup({
+  winopts = {
+    height     = 0.85,
+    width      = 0.80,
+    row        = 0.35,
+    col        = 0.50,
+    border     = 'rounded'
+  },
+})
+
 vim.cmd [[
 highlight FzfLuaNormal ctermbg=none guibg=none
 highlight FzfLuaBorder ctermbg=none guibg=none
 ]]
 vim.opt.winblend = 20
 
--- fzf-lua setting --
 vim.g.mapleader = " "
 vim.keymap.set('n', '<C-f>', "<cmd>FzfLua files<CR>")
 vim.keymap.set('n', '<C-b>', "<cmd>FzfLua buffers<CR>")
 vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>")
+
+-- Fern --
 vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50<CR>")
 
--- coc setting --
+-- coc --
 vim.keymap.set('n', '<C-[>', "<cmd>call CocActionAsync('jumpDefinition')<CR>")
 vim.keymap.set('n', '<C-]>', "<cmd>call CocActionAsync('jumpReferences')<CR>")
 vim.keymap.set(
