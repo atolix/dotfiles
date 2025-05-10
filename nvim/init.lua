@@ -17,9 +17,7 @@ vim.opt.winblend = 20
 require('nvim-treesitter.configs').setup {
   sync_install = true,
   auto_install = true,
-  endwise = {
-    enable = true,
-  },
+  endwise = { enable = true },
   highlight = {
     enable = true,
     additional_vim_regex_highlighting = false,
@@ -33,14 +31,12 @@ require('nvim-treesitter.configs').setup {
     'rust',
     'typescript'
   },
-  indent = {
-    enable = true
-  }
+  indent = { enable = true }
 }
 
 -- gitsign --
 vim.api.nvim_create_user_command('Gb', function() -- :Gb -> Show full commit message
-  require('gitsigns').blame_line{full=true}
+  require('gitsigns').blame_line{ full=true }
 end, {})
 
 -- colorscheme --
