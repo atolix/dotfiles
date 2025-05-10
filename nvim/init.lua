@@ -1,13 +1,16 @@
 require'plugins'
-vim.opt.fileencoding = "utf-8"
+
+-- base --
+vim.opt.clipboard:append{'unnamedplus'}
 vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.fileencoding = "utf-8"
+vim.opt.hidden = true
 vim.opt.number = true
 vim.opt.pumblend = 20
-vim.opt.clipboard:append{'unnamedplus'}
-vim.opt.hidden = true
-vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.winblend = 20
 
 -- nvim-treesitter --
 require('nvim-treesitter.configs').setup {
@@ -133,9 +136,7 @@ vim.cmd [[
 highlight FzfLuaNormal ctermbg=none guibg=none
 highlight FzfLuaBorder ctermbg=none guibg=none
 ]]
-vim.opt.winblend = 20
 
-vim.g.mapleader = " "
 vim.keymap.set('n', '<C-f>', "<cmd>FzfLua files<CR>")
 vim.keymap.set('n', '<C-b>', "<cmd>FzfLua buffers<CR>")
 vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>")
