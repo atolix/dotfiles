@@ -117,9 +117,6 @@ require('lualine').setup {
 -- nvim-colorizer init --
 require'colorizer'.setup()
 
--- indent_blankline init --
-require("ibl").setup { indent = { highlight = highlight } }
-
 -- scrollbar init --
 require("scrollbar").setup()
 
