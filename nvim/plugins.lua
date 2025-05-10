@@ -11,6 +11,7 @@ require'packer'.startup(function()
   use "lukas-reineke/indent-blankline.nvim"
 
   -- Code analysis & Completion
+  use 'github/copilot.vim'
   use 'nvim-treesitter/nvim-treesitter'
   use {'neoclide/coc.nvim', branch = 'release'}
 
