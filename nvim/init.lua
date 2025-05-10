@@ -137,9 +137,8 @@ vim.opt.winblend = 20
 -- fzf-lua setting --
 vim.g.mapleader = " "
 vim.keymap.set('n', '<C-f>', "<cmd>FzfLua files<CR>")
-vim.keymap.set('n', '<C-g>', "<cmd>FzfLua grep<CR>")
 vim.keymap.set('n', '<C-b>', "<cmd>FzfLua buffers<CR>")
-vim.keymap.set('n', '<C-r>', "<cmd>FzfLua live_grep<CR>")
+vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>")
 vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50<CR>")
 
 -- coc setting --
