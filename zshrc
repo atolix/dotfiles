@@ -27,3 +27,4 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
+source "$HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
