@@ -13,6 +13,9 @@ vim.opt.tabstop = 2
 vim.opt.termguicolors = true
 vim.opt.winblend = 20
 
+vim.keymap.set('n', '<C-h>', '<cmd>split<CR>') -- `ctrl + h` -> Horizontal split window
+vim.keymap.set('n', '<C-v>', '<cmd>vsplit<CR>') -- `ctrl + v` -> Vertical split window
+
 -- nvim-treesitter --
 require('nvim-treesitter.configs').setup {
   auto_install = true,
