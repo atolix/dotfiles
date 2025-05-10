@@ -45,6 +45,11 @@ require('nvim-treesitter.configs').setup {
   }
 }
 
+-- gitsign init --
+vim.api.nvim_create_user_command('Gb', function()
+  require('gitsigns').blame_line{full=true}
+end, {})
+
 -- colorscheme init --
 require('github-theme').setup({
   transparent = true,
