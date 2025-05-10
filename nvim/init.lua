@@ -1,5 +1,21 @@
 require'plugins'
 
+-- Keymap Summary:
+-- +-----------+-------------------------------+
+-- | Keybinding| Action                        |
+-- +-----------+-------------------------------+
+-- | <C-h>     | Horizontal split window       |
+-- | <C-v>     | Vertical split window         |
+-- | <C-o>     | Move to previous buffer       |
+-- | <C-p>     | Move to next buffer           |
+-- | <C-f>     | Open FzfLua file finder       |
+-- | <C-b>     | Open FzfLua buffer list       |
+-- | <C-g>     | Open FzfLua live grep         |
+-- | <C-n>     | Toggle Fern file explorer     |
+-- | <C-[>     | Jump to definition (coc)      |
+-- | <C-]>     | Jump to references (coc)      |
+-- +-----------+-------------------------------+
+
 -- base --
 vim.opt.clipboard:append{'unnamedplus'}
 vim.opt.cursorline = true
