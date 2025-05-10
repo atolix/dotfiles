@@ -86,7 +86,6 @@ require('lualine').setup {
     lualine_c = {
       { 'filename', file_status = true, path = 1 }
     },
-    lualine_d = {},
     lualine_x = {},
     lualine_y = {'progress'},
     lualine_z = {'location'}
