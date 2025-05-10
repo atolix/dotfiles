@@ -118,8 +118,8 @@ require("nvim-autopairs").setup()
 
 -- bufferline --
 require("bufferline").setup()
-vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>")
-vim.keymap.set('n', '<C-p>', "<cmd>bnext<CR>")
+vim.keymap.set('n', '<C-o>', "<cmd>bprev<CR>") -- Move tp before buffer
+vim.keymap.set('n', '<C-p>', "<cmd>bnext<CR>") -- Move to after buffer 
 
 -- fzf-lua --
 require'fzf-lua'.setup({
@@ -137,16 +137,16 @@ highlight FzfLuaNormal ctermbg=none guibg=none
 highlight FzfLuaBorder ctermbg=none guibg=none
 ]]
 
-vim.keymap.set('n', '<C-f>', "<cmd>FzfLua files<CR>")
-vim.keymap.set('n', '<C-b>', "<cmd>FzfLua buffers<CR>")
-vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>")
+vim.keymap.set('n', '<C-f>', "<cmd>FzfLua files<CR>") -- Open FzfLua file finder
+vim.keymap.set('n', '<C-b>', "<cmd>FzfLua buffers<CR>") -- Open FzfLua buffer list
+vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>") -- Open FzfLua live grep search
 
 -- Fern --
-vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50<CR>")
+vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50<CR>") -- Toggle Fern file explorer in drawer mode
 
 -- coc --
-vim.keymap.set('n', '<C-[>', "<cmd>call CocActionAsync('jumpDefinition')<CR>")
-vim.keymap.set('n', '<C-]>', "<cmd>call CocActionAsync('jumpReferences')<CR>")
+vim.keymap.set('n', '<C-[>', "<cmd>call CocActionAsync('jumpDefinition')<CR>") -- Jump to definition
+vim.keymap.set('n', '<C-]>', "<cmd>call CocActionAsync('jumpReferences')<CR>") -- Jump to references
 vim.keymap.set(
     'i',
     '<CR>',
