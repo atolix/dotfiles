@@ -118,7 +118,6 @@ require("ibl").setup { indent = { highlight = highlight } }
 require("scrollbar").setup()
 
 require("nvim-autopairs").setup()
-require("fidget").setup()
 
 -- bufferline init --
 require("bufferline").setup()
