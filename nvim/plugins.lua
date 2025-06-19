@@ -40,4 +40,11 @@ require'packer'.startup(function()
 
   -- Utility tools
   use { 'windwp/nvim-autopairs' }
+
+  -- Claude Code Integration
+  use { 'coder/claudecode.nvim',
+    config = function()
+      require('claudecode').setup()
+    end
+  }
 end)
