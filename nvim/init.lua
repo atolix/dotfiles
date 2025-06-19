@@ -14,6 +14,9 @@ require'plugins'
 -- | <C-n>     | Toggle Fern file explorer     |
 -- | <C-[>     | Jump to definition (coc)      |
 -- | <C-]>     | Jump to references (coc)      |
+-- | <C-a>     | Open Claude Code              |
+-- | <C-x>     | Send selection to Claude Code |
+-- | <C-w>     | Send current file to Claude   |
 -- +-----------+-------------------------------+
 
 -- base --
@@ -161,3 +164,7 @@ vim.keymap.set(
     { expr = true }
 )
 
+-- Claude Code --
+vim.keymap.set('n', '<C-a>', "<cmd>ClaudeCodeFocus<CR>") -- `ctrl + a` -> Open Claude Code
+vim.keymap.set('v', '<C-x>', "<cmd>ClaudeCodeSend<CR>") -- `ctrl + x` -> Send visual selection to Claude Code
+vim.keymap.set('n', '<C-w>', "<cmd>ClaudeCodeAdd %<CR>") -- `ctrl + w` -> Send current file to Claude Code
