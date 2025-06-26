@@ -58,5 +58,10 @@ return {
       mods = 'LEADER',
       action = act.ActivatePaneDirection 'Down',
     },
+    {
+      key = 'Enter',
+      mods = 'SHIFT',
+      action = wezterm.action.SendString('\n')
+    }
   },
 }
