@@ -147,7 +147,7 @@ vim.keymap.set('n', '<C-b>', "<cmd>FzfLua buffers<CR>") -- `ctrl + b` -> Open Fz
 vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>") -- `ctrl + g` -> Open FzfLua live grep search
 
 -- Fern --
-vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50<CR>") -- `ctrl + n` -> Toggle Fern file explorer in drawer mode
+vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50 -right<CR>") -- `ctrl + n` -> Toggle Fern file explorer in drawer mode
 
 -- coc --
 vim.keymap.set('n', '<C-[>', "<cmd>call CocActionAsync('jumpDefinition')<CR>") -- `ctrl + [` -> Jump to definition
