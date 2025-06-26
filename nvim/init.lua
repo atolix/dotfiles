@@ -132,7 +132,8 @@ require'fzf-lua'.setup({
     width      = 0.80,
     row        = 0.35,
     col        = 0.50,
-    border     = 'rounded'
+    border     = 'rounded',
+    backdrop   = 0.0
   },
 })
 
