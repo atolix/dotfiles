@@ -167,4 +167,3 @@ vim.keymap.set(
 -- Claude Code --
 vim.keymap.set('n', '<C-a>', "<cmd>ClaudeCodeFocus<CR>") -- `ctrl + a` -> Open Claude Code
 vim.keymap.set('v', '<C-x>', "<cmd>ClaudeCodeSend<CR>") -- `ctrl + x` -> Send visual selection to Claude Code
-vim.keymap.set('n', '<C-w>', "<cmd>ClaudeCodeAdd %<CR>") -- `ctrl + w` -> Send current file to Claude Code
