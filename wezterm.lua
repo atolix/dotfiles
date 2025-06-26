@@ -10,6 +10,7 @@ return {
   default_cursor_style = 'SteadyUnderline',
   window_background_opacity = 0.80,
   macos_window_background_blur = 10,
+  window_decorations = "RESIZE",
   leader = { key = '1', mods = 'CTRL', timeout_milliseconds = 2000 },
   keys = {
     {
