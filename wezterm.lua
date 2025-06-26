@@ -11,6 +11,21 @@ return {
   window_background_opacity = 0.80,
   macos_window_background_blur = 10,
   window_decorations = "RESIZE",
+  hide_tab_bar_if_only_one_tab = true,
+  show_new_tab_button_in_tab_bar = false,
+  show_close_tab_button_in_tabs = false,
+  window_frame = {
+   inactive_titlebar_bg = "none",
+   active_titlebar_bg = "none",
+  },
+  window_background_gradient = {
+   colors = { "#11111A" },
+  },
+  colors = {
+   tab_bar = {
+     inactive_tab_edge = "none",
+   },
+  },
   leader = { key = '1', mods = 'CTRL', timeout_milliseconds = 2000 },
   keys = {
     {
