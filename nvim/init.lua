@@ -79,7 +79,7 @@ vim.cmd [[
 -- lualine --
 require('lualine').setup {
   options = {
-    icons_enabled = true,
+    icons_enabled = false,
     theme = 'auto',
     always_divide_middle = true,
     globalstatus = false,
