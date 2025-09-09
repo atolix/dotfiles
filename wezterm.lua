@@ -10,9 +10,7 @@ return {
   default_cursor_style = 'SteadyUnderline',
   window_background_opacity = 0.80,
   macos_window_background_blur = 15,
-  hide_tab_bar_if_only_one_tab = true,
   show_new_tab_button_in_tab_bar = false,
-  window_decorations = 'RESIZE',
   window_frame = {
    inactive_titlebar_bg = "none",
    active_titlebar_bg = "none",
