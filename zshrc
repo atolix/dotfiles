@@ -1,4 +1,9 @@
 typeset -U path PATH
+
+eval "$(mise activate zsh)"
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+
 path=(
 	/opt/homebrew/bin(N-/)
 	/usr/local/bin(N-/)
@@ -6,12 +11,8 @@ path=(
 )
 
 alias nv='nvim'
-alias ls='exa -l --no-user'
+alias ls='eza -l -a --no-user'
 
-eval "$(goenv init -)"
-eval "$(nodenv init -)"
-eval "$(rbenv init -)"
-eval "$(zoxide init zsh)"
 
 fpath=(~/.zsh $fpath)
 
@@ -25,6 +26,3 @@ export SPACESHIP_PROMPT_DEFAULT_PREFIX=false
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-eval "$(starship init zsh)"
-source "$HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
