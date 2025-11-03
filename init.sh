@@ -24,6 +24,7 @@ ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
 
 mkdir ./nvim/lua
 ln -sf ~/dotfiles/nvim/plugins.lua ~/.config/nvim/lua/plugins.lua
+ln -sf ~/dotfiles/nvim/config ~/.config/nvim/lua/config
 
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 
