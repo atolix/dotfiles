@@ -41,7 +41,7 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 - `nv`: Launch `nvim`.
 - `ls`: Expand to `eza -l -a --no-user` for a detailed directory view.
 - `gco`: Shortcut for `git checkout`.
-- `FZF_DEFAULT_COMMAND=rg --files`: Use ripgrep for fast file listings in FZF.
+- `:q`: Exit.
 
 ## Plugin Manager
 
