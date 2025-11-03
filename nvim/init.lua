@@ -12,6 +12,8 @@ require'plugins'
 -- | <C-b>     | Open FzfLua buffer list       |
 -- | <C-g>     | Open FzfLua live grep         |
 -- | <C-n>     | Toggle Fern file explorer     |
+-- | <C-[>     | Jump to definition            |
+-- | <C-]>     | Jump to references            |
 -- | <C-a>     | Open Claude Code              |
 -- | <C-x>     | Send selection to Claude Code |
 -- | <C-w>     | Send current file to Claude   |
@@ -54,6 +56,7 @@ require('nvim-treesitter.configs').setup {
   sync_install = true
 }
 
+-- Navive LSP --
 local lsp_names = {
   'lua_ls',
   'ts_ls',
@@ -68,6 +71,11 @@ vim.api.nvim_create_autocmd("CursorMoved", {
     })
   end,
 })
+
+vim.keymap.set("n", "<C-[>", vim.lsp.buf.definition, { noremap = true, silent = true })
+vim.keymap.set("n", "<C-]>", function()
+  require("fzf-lua").lsp_references()
+end, { noremap = true, silent = true })
 
 vim.lsp.enable(lsp_names)
 
