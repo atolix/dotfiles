@@ -25,7 +25,7 @@ curl -o ./.zsh/git-prompt.sh  https://raw.githubusercontent.com/git/git/master/c
 
 # Create Sym Links
 mkdir .config && cd .config
-ln -sf ~/dotfiles/config/starship.toml ~/.config/starship.toml
+ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 
 mkdir wezterm
 ln -sf ~/dotfiles/wezterm.lua ~/.config/wezterm/wezterm.lua
