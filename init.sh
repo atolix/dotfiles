@@ -4,6 +4,12 @@
 # Install Tools
 brew install google-chrome slack docker wezterm starship neovim fzf zoxide eza ripgrep bat mise git tig gh
 
+# Install languages via mise
+mise use --global node@latest
+mise use --global go@latest
+mise use --global ruby@latest
+mise use --global zig@latest
+
 # Install LSPs
 brew install lua-language-server gopls zls
 npm install -g typescript typescript-language-server
