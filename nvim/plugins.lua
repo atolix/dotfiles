@@ -49,11 +49,4 @@ require("lazy").setup({
 
   -- Utility tools
   { 'windwp/nvim-autopairs' },
-
-  -- Claude Code Integration
-  { 'coder/claudecode.nvim',
-    config = function()
-      require('claudecode').setup()
-    end
-  }
 })

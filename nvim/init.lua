@@ -146,7 +146,3 @@ vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>") -- `ctrl + g` -> Open 
 
 -- Fern --
 vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50 -right<CR>") -- `ctrl + n` -> Toggle Fern file explorer in drawer mode
-
--- Claude Code --
-vim.keymap.set('n', '<C-a>', "<cmd>ClaudeCodeFocus<CR>") -- `ctrl + a` -> Open Claude Code
-vim.keymap.set('v', '<C-x>', "<cmd>ClaudeCodeSend<CR>") -- `ctrl + x` -> Send visual selection to Claude Code
