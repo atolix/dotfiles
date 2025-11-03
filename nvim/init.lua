@@ -12,8 +12,8 @@ require'plugins'
 -- | <C-b>     | Open FzfLua buffer list       |
 -- | <C-g>     | Open FzfLua live grep         |
 -- | <C-n>     | Toggle Fern file explorer     |
--- | <C-[>     | Jump to definition (coc)      |
--- | <C-]>     | Jump to references (coc)      |
+-- | <C-[>     | Jump to definition            |
+-- | <C-]>     | Jump to references            |
 -- | <C-a>     | Open Claude Code              |
 -- | <C-x>     | Send selection to Claude Code |
 -- | <C-w>     | Send current file to Claude   |
@@ -55,6 +55,38 @@ require('nvim-treesitter.configs').setup {
   indent = { enable = true },
   sync_install = true
 }
+
+-- Navive LSP --
+local lsp_names = {
+  'lua_ls',
+  'ts_ls',
+  'gopls',
+  'solargraph',
+  'zls',
+}
+
+vim.api.nvim_create_autocmd("CursorMoved", {
+  callback = function()
+    vim.diagnostic.open_float(nil, {
+      focus = false,
+      border = "rounded",
+      scope = "cursor",
+    })
+  end,
+})
+
+vim.keymap.set("n", "<C-[>", function()
+  require("fzf-lua").lsp_definitions()
+end, { noremap = true, silent = true })
+vim.keymap.set("n", "<C-]>", function()
+  require("fzf-lua").lsp_references()
+end, { noremap = true, silent = true })
+
+vim.lsp.enable(lsp_names)
+
+vim.lsp.config('*', {
+  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+})
 
 -- gitsign --
 vim.api.nvim_create_user_command('Gb', function() -- :Gb -> Show full commit message
@@ -148,23 +180,3 @@ vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>") -- `ctrl + g` -> Open 
 
 -- Fern --
 vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50 -right<CR>") -- `ctrl + n` -> Toggle Fern file explorer in drawer mode
-
--- coc --
-vim.keymap.set('n', '<C-[>', "<cmd>call CocActionAsync('jumpDefinition')<CR>") -- `ctrl + [` -> Jump to definition
-vim.keymap.set('n', '<C-]>', "<cmd>call CocActionAsync('jumpReferences')<CR>") -- `ctrl + ]` -> Jump to references
-vim.keymap.set(
-    'i',
-    '<CR>',
-    function()
-        if vim.fn['coc#pum#visible']() == 1 then
-            return vim.fn['coc#pum#confirm']()
-        else
-            return "<CR>"
-        end
-    end,
-    { expr = true }
-)
-
--- Claude Code --
-vim.keymap.set('n', '<C-a>', "<cmd>ClaudeCodeFocus<CR>") -- `ctrl + a` -> Open Claude Code
-vim.keymap.set('v', '<C-x>', "<cmd>ClaudeCodeSend<CR>") -- `ctrl + x` -> Send visual selection to Claude Code
