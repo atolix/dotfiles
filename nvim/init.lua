@@ -60,6 +60,7 @@ require('nvim-treesitter.configs').setup {
 local lsp_names = {
   'lua_ls',
   'ts_ls',
+  'gopls',
 }
 
 vim.api.nvim_create_autocmd("CursorMoved", {
