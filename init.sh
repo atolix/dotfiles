@@ -2,7 +2,18 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Tools
-brew install google-chrome slack docker wezterm starship neovim fzf zoxide eza ripgrep bat volta git tig gh
+brew install google-chrome slack docker wezterm starship neovim fzf zoxide eza ripgrep bat mise git tig gh
+
+# Install languages via mise
+mise use --global node@latest
+mise use --global go@latest
+mise use --global ruby@latest
+mise use --global zig@latest
+
+# Install LSPs
+brew install lua-language-server gopls zls
+npm install -g typescript typescript-language-server
+gem install solargraph
 
 # Clone dotfiles
 git clone git@github.com:atolix/dotfiles.git
