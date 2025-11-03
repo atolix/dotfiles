@@ -75,12 +75,16 @@ vim.api.nvim_create_autocmd("CursorMoved", {
   end,
 })
 
-vim.keymap.set("n", "<C-[>", vim.lsp.buf.definition, { noremap = true, silent = true })
+vim.keymap.set("n", "<C-[>", function()
+  require("fzf-lua").lsp_definitions()
+end, { noremap = true, silent = true })
 vim.keymap.set("n", "<C-]>", function()
   require("fzf-lua").lsp_references()
 end, { noremap = true, silent = true })
 
 vim.lsp.enable(lsp_names)
+
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- gitsign --
 vim.api.nvim_create_user_command('Gb', function() -- :Gb -> Show full commit message
