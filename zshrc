@@ -1,14 +1,14 @@
 typeset -U path PATH
 
-eval "$(mise activate zsh)"
-eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
-
 path=(
 	/opt/homebrew/bin(N-/)
 	/usr/local/bin(N-/)
 	$path
 )
+
+eval "$(mise activate zsh)"
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 
 alias nv='nvim'
 alias ls='eza -l -a --no-user'
