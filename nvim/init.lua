@@ -54,6 +54,23 @@ require('nvim-treesitter.configs').setup {
   sync_install = true
 }
 
+local lsp_names = {
+  'lua_ls',
+  'ts_ls',
+}
+
+vim.api.nvim_create_autocmd("CursorMoved", {
+  callback = function()
+    vim.diagnostic.open_float(nil, {
+      focus = false,
+      border = "rounded",
+      scope = "cursor",
+    })
+  end,
+})
+
+vim.lsp.enable(lsp_names)
+
 -- gitsign --
 vim.api.nvim_create_user_command('Gb', function() -- :Gb -> Show full commit message
   require('gitsigns').blame_line{ full=true }

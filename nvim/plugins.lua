@@ -23,6 +23,7 @@ require("lazy").setup({
   -- Code analysis & Completion
   'github/copilot.vim',
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
+  'neovim/nvim-lspconfig',
 
   -- Git integration
   'tpope/vim-fugitive',
