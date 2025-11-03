@@ -12,6 +12,7 @@ eval "$(starship init zsh)"
 
 alias nv='nvim'
 alias ls='eza -l -a --no-user'
+alias gco='git checkout'
 
 fpath=(~/.zsh $fpath)
 
