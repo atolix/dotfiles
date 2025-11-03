@@ -28,7 +28,7 @@ mkdir .config && cd .config
 ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 
 mkdir wezterm
-ln -sf ~/dotfiles/wezterm.lua ~/.config/wezterm/wezterm.lua
+ln -sf ~/dotfiles/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
 
 mkdir nvim
 ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
