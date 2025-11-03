@@ -9,7 +9,7 @@ return {
   adjust_window_size_when_changing_font_size = false,
   default_cursor_style = 'SteadyUnderline',
   window_background_opacity = 0.80,
-  macos_window_background_blur = 15,
+  macos_window_background_blur = 0,
   show_new_tab_button_in_tab_bar = false,
   window_frame = {
    inactive_titlebar_bg = "none",
