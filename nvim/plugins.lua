@@ -42,13 +42,13 @@ require("lazy").setup({
           end,
         },
         mapping = cmp.mapping.preset.insert({
-          ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Enterで確定
-          ["<C-Space>"] = cmp.mapping.complete(),           -- 手動補完
+          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+          ["<C-Space>"] = cmp.mapping.complete(),
         }),
         sources = cmp.config.sources({
-          { name = "nvim_lsp" },  -- LSPからの候補
-          { name = "buffer" },    -- バッファ内の単語
-          { name = "path" },      -- パス補完
+          { name = "nvim_lsp" },
+          { name = "buffer" },
+          { name = "path" },
         }),
       })
     end,
