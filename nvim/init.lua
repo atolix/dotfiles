@@ -61,6 +61,7 @@ local lsp_names = {
   'lua_ls',
   'ts_ls',
   'gopls',
+  'solargraph',
 }
 
 vim.api.nvim_create_autocmd("CursorMoved", {
