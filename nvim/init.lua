@@ -12,8 +12,6 @@ require'plugins'
 -- | <C-b>     | Open FzfLua buffer list       |
 -- | <C-g>     | Open FzfLua live grep         |
 -- | <C-n>     | Toggle Fern file explorer     |
--- | <C-[>     | Jump to definition (coc)      |
--- | <C-]>     | Jump to references (coc)      |
 -- | <C-a>     | Open Claude Code              |
 -- | <C-x>     | Send selection to Claude Code |
 -- | <C-w>     | Send current file to Claude   |
@@ -148,22 +146,6 @@ vim.keymap.set('n', '<C-g>', "<cmd>FzfLua live_grep<CR>") -- `ctrl + g` -> Open 
 
 -- Fern --
 vim.keymap.set('n', '<C-n>', "<cmd>Fern . -reveal=% -drawer -width=50 -right<CR>") -- `ctrl + n` -> Toggle Fern file explorer in drawer mode
-
--- coc --
-vim.keymap.set('n', '<C-[>', "<cmd>call CocActionAsync('jumpDefinition')<CR>") -- `ctrl + [` -> Jump to definition
-vim.keymap.set('n', '<C-]>', "<cmd>call CocActionAsync('jumpReferences')<CR>") -- `ctrl + ]` -> Jump to references
-vim.keymap.set(
-    'i',
-    '<CR>',
-    function()
-        if vim.fn['coc#pum#visible']() == 1 then
-            return vim.fn['coc#pum#confirm']()
-        else
-            return "<CR>"
-        end
-    end,
-    { expr = true }
-)
 
 -- Claude Code --
 vim.keymap.set('n', '<C-a>', "<cmd>ClaudeCodeFocus<CR>") -- `ctrl + a` -> Open Claude Code

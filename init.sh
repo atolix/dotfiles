@@ -20,7 +20,6 @@ mkdir wezterm
 ln -sf ~/dotfiles/wezterm.lua ~/.config/wezterm/wezterm.lua
 
 mkdir nvim
-ln -sf ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
 
 mkdir ./nvim/lua

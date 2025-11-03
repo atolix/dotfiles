@@ -23,7 +23,6 @@ require("lazy").setup({
   -- Code analysis & Completion
   'github/copilot.vim',
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
-  { 'neoclide/coc.nvim', branch = 'release' },
 
   -- Git integration
   'tpope/vim-fugitive',
