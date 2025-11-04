@@ -23,3 +23,7 @@ export BAT_THEME='Nord'
 export SPACESHIP_PROMPT_DEFAULT_PREFIX=false
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.zsh/git-prompt.sh
+fpath=(~/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+autoload -Uz compinit && compinit -u
