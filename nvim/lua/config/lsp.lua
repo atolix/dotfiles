@@ -34,3 +34,15 @@ if cmp_ok then
 end
 
 vim.lsp.config('*', lsp_config)
+
+-- format Go files via gopls/go fmt on save
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '*.go',
+  callback = function(args)
+    vim.lsp.buf.format({
+      async = false,
+      name = 'gopls',
+      bufnr = args.buf,
+    })
+  end,
+})
