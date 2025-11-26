@@ -9,12 +9,8 @@
 -- | <C-f>     | Open FzfLua file finder       |
 -- | <C-b>     | Open FzfLua buffer list       |
 -- | <C-g>     | Open FzfLua live grep         |
--- | <C-n>     | Toggle Fern file explorer     |
 -- | <C-[>     | Jump to definition            |
 -- | <C-]>     | Jump to references            |
--- | <C-a>     | Open Claude Code              |
--- | <C-x>     | Send selection to Claude Code |
--- | <C-w>     | Send current file to Claude   |
 -- +-----------+-------------------------------+
 
 vim.opt.clipboard:append({ 'unnamedplus' })
