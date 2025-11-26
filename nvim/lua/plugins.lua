@@ -27,8 +27,6 @@ require("lazy").setup({
 
   -- Navigation & File explorer
   { 'ibhagwan/fzf-lua' },
-  { 'lambdalisue/fern.vim' },
-  { 'lambdalisue/fern-git-status.vim' },
 
   -- Utility tools
   { 'windwp/nvim-autopairs' },

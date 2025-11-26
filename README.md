@@ -24,7 +24,6 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 | `Ctrl-f` | Launch FzfLua file finder. |
 | `Ctrl-b` | Open the FzfLua buffer list. |
 | `Ctrl-g` | Run a live grep search via FzfLua. |
-| `Ctrl-n` | Toggle the Fern drawer-style file explorer. |
 | `Ctrl-[` | Find symbol definitions with FzfLua. |
 | `Ctrl-]` | Find references with FzfLua. |
 
@@ -34,7 +33,6 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
   - `Leader + |`: Split the current pane horizontally.
   - `Leader + %`: Split the current pane vertically.
   - `Leader + ←/→/↑/↓`: Move focus to the adjacent pane.
-- `Shift+Enter`: Send a newline without leaving the current prompt.
 
 ### Zsh
 
