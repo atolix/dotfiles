@@ -14,8 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   -- UI & Appearance
   { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
-  { 'nvim-lualine/lualine.nvim', dependencies = { 'kyazdani42/nvim-web-devicons' } },
-  { 'akinsho/bufferline.nvim', dependencies = 'nvim-tree/nvim-web-devicons' },
+  { 'nvim-lualine/lualine.nvim' },
+  { 'akinsho/bufferline.nvim' },
 
   -- Code analysis & Completion
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
