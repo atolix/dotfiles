@@ -7,7 +7,7 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 | Path | Purpose |
 | --- | --- |
 | `init.sh` | Bootstrap script that installs Homebrew, core CLI tools, LSPs, language runtimes, and wires up the configuration symlinks. |
-| `zshrc` | Zsh profile that initializes `mise`, `zoxide`, and `starship`, and defines aliases such as `nv`. |
+| `zshrc` | Zsh profile that initializes `mise` and `starship`, and defines aliases such as `nv`. |
 | `starship.toml` | Custom Starship prompt configuration controlling appearance and language version segments. |
 | `wezterm/wezterm.lua` | WezTerm config that sets fonts, colors, pane management shortcuts, and window behavior. |
 | `nvim/` | Neovim setup. `init.lua` loads modules from `lua/config/`, while `plugins.lua` declares all plugins. |
