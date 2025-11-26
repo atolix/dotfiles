@@ -16,7 +16,6 @@ fpath=(~/.zsh $fpath)
 
 export PATH=$PATH:/home/user/go/bin
 export FZF_DEFAULT_COMMAND='rg --files'
-export BAT_THEME='Nord'
 export SPACESHIP_PROMPT_DEFAULT_PREFIX=false
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
