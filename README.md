@@ -39,8 +39,6 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 ### Zsh
 
 - `nv`: Launch `nvim`.
-- `ls`: Expand to `eza -l -a --no-user` for a detailed directory view.
-- `gco`: Shortcut for `git checkout`.
 - `:q`: Exit.
 
 ## Plugin Manager
