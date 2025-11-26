@@ -16,7 +16,6 @@ require("lazy").setup({
   { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
   { 'nvim-lualine/lualine.nvim', dependencies = { 'kyazdani42/nvim-web-devicons' } },
   { 'akinsho/bufferline.nvim', dependencies = 'nvim-tree/nvim-web-devicons' },
-  { 'petertriho/nvim-scrollbar' },
   { 'norcalli/nvim-colorizer.lua' },
   { 'lukas-reineke/indent-blankline.nvim' },
 
