@@ -21,7 +21,7 @@ require("lazy").setup({
   -- Code analysis & Completion
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
   { 'neovim/nvim-lspconfig' },
-  { 'hrsh7th/nvim-cmp', dependencies = { 'hrsh7th/cmp-nvim-lsp', 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'L3MON4D3/LuaSnip' } },
+  { 'hrsh7th/nvim-cmp', dependencies = { 'hrsh7th/cmp-nvim-lsp', 'hrsh7th/cmp-path', 'L3MON4D3/LuaSnip' } },
 
   -- Git integration
   { 'tpope/vim-fugitive' },
