@@ -7,7 +7,6 @@ path=(
 )
 
 eval "$(mise activate zsh)"
-eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 alias nv='nvim'
