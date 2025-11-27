@@ -1,4 +1,7 @@
-add_newline = false
+add_newline = true
+
+format = """
+[*✹⊹](mauve) $shell$time$directory$git_branch$git_status$git_commit$git_state$git_metrics$aws$character"""
 
 [aws.region_aliases]
 ap-northeast-1 = "jp"
@@ -13,26 +16,8 @@ disabled = true
 [time]
 disabled = false
 
-[ruby]
-format = "| ruby [$version ]($style)"
+[shell]
+disabled = false
 
-[python]
-format = "| python [$version ]($style)"
-
-[nodejs]
-format = "| node [$version ]($style)"
-
-[golang]
-format = "| golang [$version ]($style)"
-
-[rust]
-format = "| rust [$version ]($style)"
-
-[lua]
-format = "| lua [$version ]($style)"
-
-[elixir]
-format = "| elixir [$version ]($style)"
-
-[docker_context]
-format = "on [$context]($style) "
+[git_metrics]
+disabled = false
