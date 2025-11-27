@@ -24,6 +24,7 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 | `Ctrl-f` | Launch FzfLua file finder. |
 | `Ctrl-b` | Open the FzfLua buffer list. |
 | `Ctrl-g` | Run a live grep search via FzfLua. |
+| `Ctrl-n` | Open the current file's parent directory in Oil. |
 | `Ctrl-[` | Find symbol definitions with FzfLua. |
 | `Ctrl-]` | Find references with FzfLua. |
 

@@ -27,6 +27,7 @@ require("lazy").setup({
 
   -- Navigation & File explorer
   { 'ibhagwan/fzf-lua' },
+  { 'stevearc/oil.nvim', opts = {}, lazy = false },
 
   -- Utility tools
   { 'windwp/nvim-autopairs' },
