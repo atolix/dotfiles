@@ -10,7 +10,7 @@ if ok then
       max_height = 0.55,
       max_width = 0.50,
       border = "rounded",
-      win_options = { winblend = 80 }
+      win_options = { winblend = 40 }
     },
   })
 end
