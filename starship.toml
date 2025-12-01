@@ -1,7 +1,9 @@
 add_newline = true
 
 format = """
-[*✹⊹](mauve) $shell$time$directory$git_branch$git_status$git_commit$git_state$git_metrics$aws$character"""
+[*✹⊹](mauve) $shell$time$directory$git_branch$git_status$git_commit$git_state$git_metrics$aws
+$character
+"""
 
 [aws.region_aliases]
 ap-northeast-1 = "jp"
