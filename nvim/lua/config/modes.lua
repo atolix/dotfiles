@@ -8,7 +8,7 @@ modes.setup({
     copy = "#f5c359",
     delete = "#c75c6a",
     insert = "#79c0ff",
-    visual = "#bc8cff",
+    visual = "#8957e5",
   },
   line_opacity = 0.4,
   set_cursor = true,
