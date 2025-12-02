@@ -14,8 +14,14 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   -- UI & Appearance
   { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
-  { 'nvim-lualine/lualine.nvim' },
   { 'akinsho/bufferline.nvim' },
+  {
+    'b0o/incline.nvim',
+    event = 'VeryLazy',
+    config = function()
+      require('config.incline')
+    end
+  },
 
   -- Code analysis & Completion
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
