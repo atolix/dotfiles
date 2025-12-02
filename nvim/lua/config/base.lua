@@ -27,6 +27,7 @@ vim.opt.winblend = 30
 
 vim.opt.showmode = false
 vim.opt.laststatus = 0
+vim.opt.cmdheight = 0
 vim.opt.statusline = "─"
 vim.opt.ruler = false
 vim.opt.fillchars:append({ stl = "─", stlnc = "─" })
