@@ -16,13 +16,19 @@ require("lazy").setup({
   { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
   { 'akinsho/bufferline.nvim' },
   {
+    'mvllow/modes.nvim',
+    event = 'VeryLazy',
+    config = function()
+      require('config.modes')
+    end
+  },
+  {
     'b0o/incline.nvim',
     event = 'VeryLazy',
     config = function()
       require('config.incline')
     end
   },
-
   -- Code analysis & Completion
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
   { 'neovim/nvim-lspconfig' },
