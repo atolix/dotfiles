@@ -25,5 +25,10 @@ vim.opt.tabstop = 2
 vim.opt.termguicolors = true
 vim.opt.winblend = 30
 
+-- clear statusline
+vim.opt.laststatus = 0
+vim.opt.statusline = "─"
+vim.opt.fillchars:append({ stl = "─", stlnc = "─" })
+
 vim.keymap.set('n', '<C-h>', '<cmd>split<CR>') -- `ctrl + h` -> Horizontal split window
 vim.keymap.set('n', '<C-v>', '<cmd>vsplit<CR>') -- `ctrl + v` -> Vertical split window
