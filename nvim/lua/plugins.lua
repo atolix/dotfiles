@@ -11,6 +11,12 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local function load_config(name)
+  return function()
+    require(('config.%s'):format(name))
+  end
+end
+
 require("lazy").setup({
   -- UI & Appearance
   { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
@@ -18,16 +24,12 @@ require("lazy").setup({
   {
     'mvllow/modes.nvim',
     event = 'VeryLazy',
-    config = function()
-      require('config.modes')
-    end
+    config = load_config('modes')
   },
   {
     'b0o/incline.nvim',
     event = 'VeryLazy',
-    config = function()
-      require('config.incline')
-    end
+    config = load_config('incline')
   },
   -- Code analysis & Completion
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
