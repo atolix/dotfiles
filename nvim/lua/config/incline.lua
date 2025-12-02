@@ -62,12 +62,14 @@ local function get_git_segments(buf)
   return segments
 end
 
-local function with_spacing(sections)
+local section_separator = { " │ ", group = "Comment" }
+
+local function join_sections(sections)
   local parts = {}
   for _, section in ipairs(sections) do
     if #section > 0 then
       if #parts > 0 then
-        table.insert(parts, { " " })
+        table.insert(parts, section_separator)
       end
       vim.list_extend(parts, section)
     end
@@ -124,7 +126,7 @@ if ok then
       }
     })
 
-    return with_spacing(sections)
+    return join_sections(sections)
   end,
   window = {
     margin = {
