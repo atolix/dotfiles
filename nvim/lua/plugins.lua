@@ -21,16 +21,9 @@ require("lazy").setup({
   -- UI & Appearance
   { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
   { 'akinsho/bufferline.nvim' },
-  {
-    'mvllow/modes.nvim',
-    event = 'VeryLazy',
-    config = load_config('modes')
-  },
-  {
-    'b0o/incline.nvim',
-    event = 'VeryLazy',
-    config = load_config('incline')
-  },
+  { 'mvllow/modes.nvim', event = 'VeryLazy', config = load_config('modes') },
+  { 'b0o/incline.nvim', event = 'VeryLazy', config = load_config('incline') },
+
   -- Code analysis & Completion
   { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate" },
   { 'neovim/nvim-lspconfig' },
