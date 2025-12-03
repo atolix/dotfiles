@@ -39,7 +39,10 @@ local function get_diagnostic_segments(buf)
     if item.severity then
       local count = #vim.diagnostic.get(buf, { severity = item.severity })
       if count > 0 then
-        table.insert(segments, { string.format(" %s %d", item.icon, count), group = item.group })
+        if #segments > 0 then
+          table.insert(segments, { "  " })
+        end
+        table.insert(segments, { string.format("%s %d", item.icon, count), group = item.group })
       end
     end
   end
@@ -56,10 +59,31 @@ local function get_git_segments(buf)
   for _, item in ipairs(git_symbols) do
     local count = status[item.key]
     if count and count > 0 then
-      table.insert(segments, { string.format("%s %d", item.icon, count), group = item.group })
+      if #segments > 0 then
+        table.insert(segments, { "  " })
+      end
+      local hl = vim.api.nvim_get_hl(0, { name = item.group })
+      local fg_color = hl.fg and string.format("#%06x", hl.fg) or nil
+      table.insert(segments, { string.format("%s %d", item.icon, count), guifg = fg_color })
     end
   end
   return segments
+end
+
+local function get_highest_severity(buf)
+  if not vim.diagnostic then
+    return nil
+  end
+
+  for _, item in ipairs(severity_levels) do
+    if item.severity then
+      local count = #vim.diagnostic.get(buf, { severity = item.severity })
+      if count > 0 then
+        return item.group
+      end
+    end
+  end
+  return nil
 end
 
 local section_separator = { " │ ", group = "Comment" }
@@ -119,12 +143,15 @@ if ok then
       filename = vim.fn.fnamemodify(filename, ":.")
     end
 
-    table.insert(sections, {
-      {
-        filename,
-        gui = props.focused and "bold" or "none"
-      }
-    })
+    local highest_severity = get_highest_severity(props.buf)
+    local filename_segment = {
+      filename,
+      gui = props.focused and "bold" or "none"
+    }
+    if highest_severity then
+      filename_segment.group = highest_severity
+    end
+    table.insert(sections, { filename_segment })
 
     return join_sections(sections)
   end,
