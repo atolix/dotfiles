@@ -39,7 +39,7 @@ local function get_diagnostic_segments(buf)
     if item.severity then
       local count = #vim.diagnostic.get(buf, { severity = item.severity })
       if count > 0 then
-        table.insert(segments, { string.format("%s %d", item.icon, count), group = item.group })
+        table.insert(segments, { string.format(" %s %d", item.icon, count), group = item.group })
       end
     end
   end
