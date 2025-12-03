@@ -116,7 +116,7 @@ if ok then
     if filename == "" then
       filename = "[No Name]"
     else
-      filename = vim.fn.fnamemodify(filename, ":t")
+      filename = vim.fn.fnamemodify(filename, ":.")
     end
 
     table.insert(sections, {
