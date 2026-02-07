@@ -8,10 +8,11 @@ brew install google-chrome slack docker wezterm starship neovim fzf eza ripgrep 
 mise use --global node@latest
 mise use --global go@latest
 mise use --global ruby@latest
+mise use --global rust@latest
 mise use --global zig@latest
 
 # Install LSPs
-brew install lua-language-server gopls zls
+brew install lua-language-server gopls rust-analyzer zls
 npm install -g typescript typescript-language-server
 gem install solargraph
 

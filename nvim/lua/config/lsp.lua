@@ -3,6 +3,7 @@ local lsp_names = {
   'ts_ls',
   'gopls',
   'solargraph',
+  'rust_analyzer',
   'zls',
 }
 
