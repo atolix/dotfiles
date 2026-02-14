@@ -39,6 +39,9 @@ mkdir ./nvim/lua
 ln -sf ~/dotfiles/nvim/lua/plugins.lua ~/.config/nvim/lua/plugins.lua
 ln -sf ~/dotfiles/nvim/lua/config ~/.config/nvim/lua/config
 
+mkdir ghostty
+ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
+
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 
 source .zshrc

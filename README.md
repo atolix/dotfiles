@@ -10,6 +10,7 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 | `zshrc` | Zsh profile that initializes `mise` and `starship`, and defines aliases such as `nv`. |
 | `starship.toml` | Custom Starship prompt configuration controlling appearance and language version segments. |
 | `wezterm/wezterm.lua` | WezTerm config that sets fonts, colors, pane management shortcuts, and window behavior. |
+| `ghostty/config` | Ghostty terminal config for font, opacity, keybindings, and macOS UI behavior. |
 | `nvim/` | Neovim setup. `init.lua` loads modules from `lua/config/`, while `plugins.lua` declares all plugins. |
 
 ## Shortcuts

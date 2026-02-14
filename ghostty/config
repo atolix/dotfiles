@@ -1,0 +1,18 @@
+# System
+# テキスト選択時に自動的にクリップボードにコピー
+copy-on-select = clipboard
+
+unfocused-split-opacity=0.92
+background-opacity = 0.80
+selection-background = c5e1f4
+cursor-style-blink = true
+cursor-color = c5e1f4
+resize-overlay = never
+font-family = JetBrains Mono NL
+font-feature = -dlig
+adjust-cell-height = 10%
+keybind = global:cmd+backquote=toggle_quick_terminal
+macos-titlebar-style = tabs
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
