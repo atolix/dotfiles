@@ -27,7 +27,6 @@ mv ~/.zsh/git-completion.zsh ~/.zsh/_git
 
 # Create Sym Links
 mkdir .config && cd .config
-ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 
 mkdir wezterm
 ln -sf ~/dotfiles/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
