@@ -13,7 +13,8 @@ mise use --global rust@latest
 mise use --global zig@latest
 
 # Install LSPs
-brew install lua-language-server gopls rust-analyzer zls
+brew install lua-language-server rust-analyzer zls
+go install golang.org/x/tools/gopls@latest
 npm install -g typescript typescript-language-server
 gem install solargraph
 
