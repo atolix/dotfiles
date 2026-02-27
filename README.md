@@ -8,8 +8,6 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 | --- | --- |
 | `init.sh` | Bootstrap script that installs Homebrew, core CLI tools, LSPs, language runtimes, and wires up the configuration symlinks. |
 | `zshrc` | Zsh profile that initializes `mise` and `starship`, and defines aliases such as `nv`. |
-| `starship.toml` | Custom Starship prompt configuration controlling appearance and language version segments. |
-| `wezterm/wezterm.lua` | WezTerm config that sets fonts, colors, pane management shortcuts, and window behavior. |
 | `ghostty/config` | Ghostty terminal config for font, opacity, keybindings, and macOS UI behavior. |
 | `nvim/` | Neovim setup. `init.lua` loads modules from `lua/config/`, while `plugins.lua` declares all plugins. |
 
@@ -28,13 +26,6 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 | `Ctrl-n` | Open the current file's parent directory in Oil. |
 | `Ctrl-[` | Find symbol definitions with FzfLua. |
 | `Ctrl-]` | Find references with FzfLua. |
-
-### WezTerm
-
-- Press `Ctrl+1` to enter the leader mode:
-  - `Leader + |`: Split the current pane horizontally.
-  - `Leader + %`: Split the current pane vertically.
-  - `Leader + ←/→/↑/↓`: Move focus to the adjacent pane.
 
 ### Zsh
 

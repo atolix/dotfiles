@@ -2,7 +2,8 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Tools
-brew install google-chrome slack docker wezterm powerlevel10k neovim fzf eza ripgrep bat mise git tig gh
+brew install google-chrome slack docker powerlevel10k neovim fzf eza ripgrep bat mise git tig gh
+brew install --cask ghostty
 
 # Install languages via mise
 mise use --global node@latest
@@ -27,9 +28,6 @@ mv ~/.zsh/git-completion.zsh ~/.zsh/_git
 
 # Create Sym Links
 mkdir .config && cd .config
-
-mkdir wezterm
-ln -sf ~/dotfiles/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
 
 mkdir nvim
 ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
