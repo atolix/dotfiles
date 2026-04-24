@@ -3,7 +3,7 @@
 copy-on-select = clipboard
 
 unfocused-split-opacity=0.92
-background-opacity = 0.80
+background-opacity = 0.75
 selection-background = c5e1f4
 cursor-style-blink = true
 cursor-color = c5e1f4

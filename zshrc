@@ -8,6 +8,7 @@ fi
 typeset -U path PATH
 
 path=(
+	$HOME/bin(N-/)
 	/opt/homebrew/bin(N-/)
 	/usr/local/bin(N-/)
 	$path
