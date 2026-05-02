@@ -24,7 +24,6 @@ fpath=(~/.zsh $fpath)
 
 export PATH=$PATH:/home/user/go/bin
 export FZF_DEFAULT_COMMAND='rg --files'
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ~/.zsh/git-prompt.sh
@@ -32,5 +31,6 @@ fpath=(~/.zsh $fpath)
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 autoload -Uz compinit && compinit -u
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, edit ~/dotfiles/p10k.zsh.
+[[ ! -f ~/dotfiles/p10k.zsh ]] || source ~/dotfiles/p10k.zsh
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
