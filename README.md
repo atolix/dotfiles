@@ -7,7 +7,8 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 | Path | Purpose |
 | --- | --- |
 | `init.sh` | Bootstrap script that installs Homebrew, core CLI tools, LSPs, language runtimes, and wires up the configuration symlinks. |
-| `zshrc` | Zsh profile that initializes `mise` and `starship`, and defines aliases such as `nv`. |
+| `zshrc` | Zsh profile that initializes `mise` and Powerlevel10k, and defines aliases such as `nv`. |
+| `p10k.zsh` | Powerlevel10k prompt configuration. |
 | `ghostty/config` | Ghostty terminal config for font, opacity, keybindings, and macOS UI behavior. |
 | `nvim/` | Neovim setup. `init.lua` loads modules from `lua/config/`, while `plugins.lua` declares all plugins. |
 
@@ -31,6 +32,7 @@ Personal dotfiles that provision my development environment. Running `init.sh` a
 
 - `nv`: Launch `nvim`.
 - `:q`: Exit.
+- Prompt: Powerlevel10k is configured through `p10k.zsh`.
 
 ## Plugin Manager
 
