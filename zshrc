@@ -33,4 +33,4 @@ autoload -Uz compinit && compinit -u
 
 # To customize prompt, edit ~/dotfiles/p10k.zsh.
 [[ ! -f ~/dotfiles/p10k.zsh ]] || source ~/dotfiles/p10k.zsh
-source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme

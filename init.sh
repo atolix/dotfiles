@@ -41,6 +41,5 @@ mkdir ghostty
 ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
 
 ln -sf ~/dotfiles/zshrc ~/.zshrc
-echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
-source .zshrc
+source ~/.zshrc
