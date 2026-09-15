@@ -19,14 +19,16 @@ onboarding = false
 
 # Override individual color tokens on top of the base theme.
 # Accepts: hex (#rrggbb), named colors, rgb(r,g,b), or panel_bg = "reset"
-# [theme.custom]
+[theme.custom]
 # sidebar_bg = "#181825"
 # active_row_bg = "#1e1e2e"
 # selection_bg = "#313244"
 # panel_bg = "reset"
 # accent = "#f5c2e7"
-# red = "#ff6188"
-# green = "#a6e3a1"
+# State colors: blocked -> GitHub Dark red, working -> blue, done -> cyan
+red = "#f85149"
+yellow = "#89b4fa"
+green = "#89dceb"
 
 # Layer appearance-specific overrides on top when auto_switch is enabled.
 # [theme.custom.light]
