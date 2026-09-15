@@ -2,7 +2,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Tools
-brew install google-chrome slack docker powerlevel10k neovim fzf eza ripgrep bat mise git tig gh
+brew install google-chrome slack docker powerlevel10k neovim fzf eza ripgrep bat mise git tig gh herdr
 brew install --cask ghostty
 
 # Install languages via mise
