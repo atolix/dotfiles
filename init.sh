@@ -40,6 +40,9 @@ ln -sf ~/dotfiles/nvim/lua/config ~/.config/nvim/lua/config
 mkdir ghostty
 ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
 
+mkdir herdr
+ln -sf ~/dotfiles/herdr/config.toml ~/.config/herdr/config.toml
+
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 
 source ~/.zshrc
